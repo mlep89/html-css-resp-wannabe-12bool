@@ -1,73 +1,78 @@
-.row {
-  width: 992px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-}
-
-/* BLOCCO LEZIONI */
-#lezioni .row>.left,
-#lezioni .row>.right {
-  width: 50%;
-  float: left;
-}
-
-#lezioni .row img {
-  /* per centrare orizzontalmente */
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-#lezioni {
-  text-align: center;
-}
-
-/* BLOCCO STEPS */
-#steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
-  float: left;
-  width: 33%;
-}
-
-#steps {
-  text-align: center;
-}
-
-/* BLOCCO PERCHE */
-#why {
-  text-align: center;
-}
-
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
-  width: 100%;
-  margin-top: 80px;
-}
-
-#why .row img {
-  background-color: #428bca;
-  border-radius: 50%;
-  padding: 30px
-}
-
 /* COMMON */
-.row::after {
-  content: '';
-  display: table;
-  clear: both;
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.container.grey {
+.second_section,
+.fourth_section {
   background-color: #f9f9f9;
 }
 
+h1 {
+  padding-bottom: 2vh;
+}
 img {
   height: 200px;
 }
-
-.clear {
-  clear: both;
+h3 {
+  padding: 3vh;
 }
+
+.first_section {
+  padding: 10vh 0;
+}
+.third_section {
+  height: 20vh;
+}
+.fourth_section img {
+  height: 250px;
+  color: white;
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: 40px;
+}
+.fourth_section p {
+  padding-bottom: 1vh;
+  margin-bottom: 10vh;
+  border-bottom: 1px solid grey;
+}
+#last_p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0 white;
+}
+@media screen and (max-width: 768px) {
+  .first_section,
+  .fourth_section {
+    background-color: #f2f2cd;
+  }
+  .second_section {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+   h3 {
+    padding: 0;
+  }
+  .first_section {
+    padding-bottom: 0;
+  }
+  .first_section p {
+    padding-bottom: 3vh;
+  }
+  .second_section {
+    padding: 3vh 0;
+  }
+  .second_section img {
+    padding-top: 3vh;
+  }
+  .third_section {
+    display: none;
+  }
+  .fourth_section {
+    padding-top: 3vh;
+  }
